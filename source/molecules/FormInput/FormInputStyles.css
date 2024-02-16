@@ -1,0 +1,45 @@
+.FormInputContainer {
+  display: flex;
+  height: 50px;
+  padding: 0px 10px;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: space-between;
+  background-color: var(--light-grey);
+}
+
+.FormInputIcon {
+  width: 30px;
+  height: 30px;
+}
+
+.FormInput {
+  flex: 1;
+  border: none;
+  margin-left: 10px;
+  color: var(--grey);
+  font-family: "Poppins-Regular";
+  background-color: var(--light-grey);
+  height: 90%;
+}
+
+.FormInput:focus {
+  outline: none;
+}
+
+.FormInput::placeholder {
+  color: var(--grey);
+}
+
+.FormInput::-ms-reveal,
+.FormInput::-ms-clear {
+  display: none;
+}
+
+.FormInputError {
+  margin: 0px;
+  font-size: 12px;
+  margin-bottom: 15px;
+  color: var(--error);
+  font-family: "Poppins-Regular";
+}

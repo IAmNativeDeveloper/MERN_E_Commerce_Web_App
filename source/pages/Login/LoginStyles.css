@@ -1,0 +1,87 @@
+.loginMainContainer {
+  margin: -8px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--light-grey);
+}
+
+.loginImage {
+  width: 70px;
+  height: 70px;
+}
+
+.loginCardContainer {
+  width: 25%;
+  max-width: 550px;
+  z-index: 1;
+  margin-top: 24px;
+  border-radius: 10px;
+  padding: 10px 24px 24px;
+  background-color: var(--white);
+  box-shadow: 0px 0px 10px var(--grey);
+}
+
+.loginFormContainer {
+  margin-top: 50px;
+}
+
+.loginCardForgotText {
+  font-size: 12px;
+  text-align: right;
+  text-align: right;
+  margin: -5px 0px 0px;
+  color: var(--secondary);
+  font-family: "Poppins-SemiBold";
+}
+
+.loginSignupText {
+  width: 20%;
+  margin: 0px;
+  font-size: 12px;
+  color: var(--grey);
+  padding: 10px 20px;
+  text-align: center;
+  font-family: "Poppins-Regular";
+  background-color: var(--white);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.loginSignupLink {
+  font-size: 12px;
+  color: var(--secondary);
+  font-family: "Poppins-SemiBold";
+}
+
+@media screen and (min-width: 960px) and (max-width: 1280px) {
+  .loginCardContainer {
+    width: 35%;
+  }
+  .loginSignupText {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 960px) {
+  .loginCardContainer {
+    width: 50%;
+  }
+  .loginSignupText {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .loginCardContainer {
+    width: 70%;
+  }
+  .loginSignupText {
+    width: 65%;
+  }
+  .loginFormInput {
+    width: 100px;
+  }
+}

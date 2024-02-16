@@ -1,0 +1,12 @@
+.ButtonContainer {
+  width: 100%;
+  border: none;
+  height: 50px;
+  font-size: 16px;
+  margin-top: 50px;
+  padding: 0px 20px;
+  border-radius: 10px;
+  color: var(--secondary);
+  font-family: "Poppins-SemiBold";
+  background-color: var(--primary);
+}
