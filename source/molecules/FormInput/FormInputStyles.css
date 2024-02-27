@@ -1,8 +1,9 @@
 .FormInputContainer {
-  display: flex;
   height: 50px;
+  display: flex;
   padding: 0px 10px;
   align-items: center;
+  margin-bottom: 20px;
   border-radius: 10px;
   justify-content: space-between;
   background-color: var(--light-grey);
@@ -15,12 +16,12 @@
 
 .FormInput {
   flex: 1;
+  height: 90%;
   border: none;
   margin-left: 10px;
   color: var(--grey);
   font-family: "Poppins-Regular";
   background-color: var(--light-grey);
-  height: 90%;
 }
 
 .FormInput:focus {
@@ -39,7 +40,8 @@
 .FormInputError {
   margin: 0px;
   font-size: 12px;
-  margin-bottom: 15px;
+  margin-top: -20px;
+  position: absolute;
   color: var(--error);
   font-family: "Poppins-Regular";
 }

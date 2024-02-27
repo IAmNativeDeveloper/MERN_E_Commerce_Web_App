@@ -1,9 +1,5 @@
 import "./ButtonStyles.css";
-
-interface ButtonType {
-  title: string;
-  onClick?: () => void;
-}
+import { ButtonType } from "../../types/ButtonType";
 
 export default function Button({ title, onClick }: ButtonType) {
   return (

@@ -5,6 +5,7 @@ import "./source/utilities/fonts.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Welcome from "./source/pages/Welcome/Welcome";
 import Login from "./source/pages/Login/Login";
+import Register from "./source/pages/Register/Register";
 import Home from "./source/pages/Home/Home";
 
 const router = createBrowserRouter([
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <Login />,
+  },
+  {
+    path: "/register",
+    element: <Register />,
   },
   {
     path: "/home",

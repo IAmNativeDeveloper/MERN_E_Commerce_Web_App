@@ -5,6 +5,7 @@ import AuthHeader from "../../atoms/AuthHeader/AuthHeader";
 import APP_TEXTS from "../../utilities/appTexts";
 import FormInput from "../../molecules/FormInput/FormInput";
 import Button from "../../atoms/Button/Button";
+import { Link } from "react-router-dom";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -30,15 +31,15 @@ export default function Login() {
   };
 
   return (
-    <div className="loginMainContainer">
+    <div className="LoginMainContainer">
       <img
         src="/source/assets/images/logo.png"
         alt="app-logo"
-        className="loginImage"
+        className="LoginImage"
       />
-      <div className="loginCardContainer">
+      <div className="LoginCardContainer">
         <AuthHeader title={APP_TEXTS.loginHeader} />
-        <form className="loginFormContainer">
+        <form className="LoginFormContainer">
           <FormInput
             leftIcon="email"
             leftIconAlt="email-icon"
@@ -67,12 +68,14 @@ export default function Login() {
             errorText={passwordError}
           />
         </form>
-        <p className="loginCardForgotText">{APP_TEXTS.forgotPasswordText}</p>
+        <p className="LoginCardForgotText">{APP_TEXTS.forgotPasswordText}</p>
         <Button title={APP_TEXTS.loginButton} onClick={handleLoginSubmit} />
       </div>
-      <p className="loginSignupText">
+      <p className="LoginSignupText">
         {APP_TEXTS.signUpText}{" "}
-        <span className="loginSignupLink">{APP_TEXTS.createAccountText}</span>
+        <Link to="/register" style={{ textDecoration: "none" }}>
+          <span className="LoginSignupLink">{APP_TEXTS.createAccountText}</span>
+        </Link>
       </p>
     </div>
   );

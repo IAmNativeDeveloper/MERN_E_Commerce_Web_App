@@ -24,3 +24,25 @@ export const validatePassword = (password: string) => {
     return "";
   }
 };
+
+export const validateName = (name: string) => {
+  if (!name || name === "") {
+    return "Name is required";
+  } else if (/[!@#$%^&*]/.test(name)) {
+    return "Name cannot contain symbols";
+  } else {
+    return "";
+  }
+};
+
+export const validatePhone = (phone: string) => {
+  if (!phone || phone === "") {
+    return "Mobile number is required";
+  } else if (/\s/.test(phone)) {
+    return "Phone number should not contain spaces";
+  } else if (phone.length < 10 || phone.length > 10) {
+    return "Invalid mobile number";
+  } else {
+    return "";
+  }
+};

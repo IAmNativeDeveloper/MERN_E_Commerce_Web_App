@@ -1,4 +1,4 @@
-.LoginMainContainer {
+.RegisterMainContainer {
   margin: -8px;
   height: 100vh;
   display: flex;
@@ -8,15 +8,15 @@
   background-color: var(--light-grey);
 }
 
-.LoginImage {
+.RegisterImage {
   width: 70px;
   height: 70px;
 }
 
-.LoginCardContainer {
+.RegisterCardContainer {
   width: 25%;
-  z-index: 1;
   max-width: 550px;
+  z-index: 1;
   margin-top: 24px;
   border-radius: 10px;
   padding: 10px 24px 24px;
@@ -24,20 +24,11 @@
   box-shadow: 0px 0px 10px var(--grey);
 }
 
-.LoginFormContainer {
+.RegisterFormContainer {
   margin-top: 50px;
 }
 
-.LoginCardForgotText {
-  font-size: 12px;
-  text-align: right;
-  text-align: right;
-  margin: -5px 0px 0px;
-  color: var(--secondary);
-  font-family: "Poppins-SemiBold";
-}
-
-.LoginSignupText {
+.RegisterSignupText {
   width: 20%;
   margin: 0px;
   font-size: 12px;
@@ -50,35 +41,35 @@
   border-bottom-right-radius: 10px;
 }
 
-.LoginSignupLink {
+.RegisterSignupLink {
   font-size: 12px;
   color: var(--secondary);
   font-family: "Poppins-SemiBold";
 }
 
 @media screen and (min-width: 960px) and (max-width: 1280px) {
-  .LoginCardContainer {
+  .RegisterCardContainer {
     width: 35%;
   }
-  .LoginSignupText {
+  .RegisterSignupText {
     width: 30%;
   }
 }
 
 @media screen and (min-width: 600px) and (max-width: 960px) {
-  .LoginCardContainer {
+  .RegisterCardContainer {
     width: 50%;
   }
-  .LoginSignupText {
+  .RegisterSignupText {
     width: 45%;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .LoginCardContainer {
+  .RegisterCardContainer {
     width: 70%;
   }
-  .LoginSignupText {
+  .RegisterSignupText {
     width: 65%;
   }
 }

@@ -1,4 +1,4 @@
-.welcomeMainContainer {
+.WelcomeMainContainer {
   margin: -8px;
   height: 100vh;
   display: flex;
@@ -9,22 +9,22 @@
   background-color: var(--light);
 }
 
-.welcomeLogo {
+.WelcomeLogo {
   width: 150px;
   height: 150px;
 }
 
-.welcomeHeading {
+.WelcomeHeading {
   text-align: center;
   margin: 5px 0px 0px;
 }
 
-.welcomeButtonContainer {
+.WelcomeButtonContainer {
   display: flex;
   margin: 30px 0px 0px;
 }
 
-.welcomeLoginButton {
+.WelcomeLoginButton {
   border: none;
   height: 50px;
   font-size: 16px;
@@ -36,7 +36,7 @@
   background-color: var(--primary);
 }
 
-.welcomeJoinButton {
+.WelcomeJoinButton {
   border: none;
   height: 50px;
   font-size: 16px;

@@ -1,8 +1,5 @@
 import "./AuthHeaderStyles.css";
-
-interface AuthHeaderType {
-  title: string;
-}
+import { AuthHeaderType } from "../../types/AuthHeaderType";
 
 export default function AuthHeader({ title }: AuthHeaderType) {
   return <h1 className="AuthHeaderText">{title}</h1>;
