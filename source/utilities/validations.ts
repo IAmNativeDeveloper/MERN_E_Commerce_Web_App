@@ -46,3 +46,15 @@ export const validatePhone = (phone: string) => {
     return "";
   }
 };
+
+export const validateOtp = (otp: string) => {
+  if (!otp || otp === "") {
+    return "OTP is required";
+  } else if (/\s/.test(otp)) {
+    return "OTP should not contain spaces";
+  } else if (otp.length < 6 || otp.length > 6) {
+    return "Invalid OTP";
+  } else {
+    return "";
+  }
+};

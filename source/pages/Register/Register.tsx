@@ -10,7 +10,7 @@ import APP_TEXTS from "../../utilities/appTexts";
 import FormInput from "../../molecules/FormInput/FormInput";
 import Button from "../../atoms/Button/Button";
 import "./RegisterStyles.css";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function Register() {
   const [name, setName] = useState("");
@@ -26,6 +26,8 @@ export default function Register() {
   const [passwordError, setPasswordError] = useState("");
 
   const [showPassword, setShowPassword] = useState(false);
+
+  const navigate = useNavigate();
 
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
@@ -123,9 +125,9 @@ export default function Register() {
       </div>
       <p className="RegisterSignupText">
         {APP_TEXTS.loginText}{" "}
-        <Link to="/login" style={{ textDecoration: "none" }}>
-          <span className="RegisterSignupLink">{APP_TEXTS.signInText}</span>
-        </Link>
+        <span className="RegisterSignupLink" onClick={() => navigate(-1)}>
+          {APP_TEXTS.signInText}
+        </span>
       </p>
     </div>
   );

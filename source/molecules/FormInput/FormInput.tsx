@@ -34,6 +34,7 @@ export default function FormInput({
             alt="eye-icon"
             onClick={togglePassword}
             className="FormInputIcon"
+            style={{ cursor: "pointer" }}
           />
         )}
       </div>

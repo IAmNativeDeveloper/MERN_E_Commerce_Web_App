@@ -1,0 +1,18 @@
+.CommonHeaderContainer {
+  display: flex;
+  align-items: center;
+}
+
+.CommonHeaderBackIcon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin-left: -3px;
+  margin-right: 10px;
+}
+
+.CommonHeaderText {
+  margin: 0px;
+  text-align: left;
+  font-family: "Poppins-Bold";
+}

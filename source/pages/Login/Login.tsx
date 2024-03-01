@@ -5,7 +5,7 @@ import AuthHeader from "../../atoms/AuthHeader/AuthHeader";
 import APP_TEXTS from "../../utilities/appTexts";
 import FormInput from "../../molecules/FormInput/FormInput";
 import Button from "../../atoms/Button/Button";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -15,6 +15,8 @@ export default function Login() {
   const [passwordError, setPasswordError] = useState("");
 
   const [showPassword, setShowPassword] = useState(false);
+
+  const navigate = useNavigate();
 
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
@@ -68,14 +70,19 @@ export default function Login() {
             errorText={passwordError}
           />
         </form>
-        <p className="LoginCardForgotText">{APP_TEXTS.forgotPasswordText}</p>
+        <p
+          className="LoginCardForgotText"
+          onClick={() => navigate("/forgot-password")}
+        >
+          {APP_TEXTS.forgotPasswordText}
+        </p>
         <Button title={APP_TEXTS.loginButton} onClick={handleLoginSubmit} />
       </div>
       <p className="LoginSignupText">
         {APP_TEXTS.signUpText}{" "}
-        <Link to="/register" style={{ textDecoration: "none" }}>
-          <span className="LoginSignupLink">{APP_TEXTS.createAccountText}</span>
-        </Link>
+        <span className="LoginSignupLink" onClick={() => navigate("/register")}>
+          {APP_TEXTS.createAccountText}
+        </span>
       </p>
     </div>
   );

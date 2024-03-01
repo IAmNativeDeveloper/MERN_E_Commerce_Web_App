@@ -29,6 +29,7 @@
 }
 
 .LoginCardForgotText {
+  cursor: pointer;
   font-size: 12px;
   text-align: right;
   text-align: right;
@@ -51,6 +52,7 @@
 }
 
 .LoginSignupLink {
+  cursor: pointer;
   font-size: 12px;
   color: var(--secondary);
   font-family: "Poppins-SemiBold";
